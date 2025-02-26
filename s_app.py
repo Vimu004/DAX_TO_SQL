@@ -78,7 +78,7 @@ with col1:
 
             # Make a POST request to the translation endpoint
             try:
-                response = requests.post("http://localhost:5000/translate", json=payload)
+                response = requests.post("endpoint/translate", json=payload)
                 if response.status_code == 200:
                     result = response.json()
                     st.session_state.translated_query = result.get("translated_query", "")

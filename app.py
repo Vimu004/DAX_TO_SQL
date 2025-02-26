@@ -12,15 +12,15 @@ load_dotenv()
 logging.basicConfig(level=logging.INFO)
 
 # Azure OpenAI configuration
-AZURE_OPENAI_API_KEY = "AFlouhwXnpCgj3Rmso284VxT2HeEP7VpFwVII1jJWEDwG1P1RZpBJQQJ99BBACHYHv6XJ3w3AAABACOGHjkK"
-AZURE_OPENAI_DEPLOYMENT_ID = "gpt-4o"
-AZURE_ENDPOINT = "https://dplnew.openai.azure.com/"
+AZURE_OPENAI_API_KEY = "#####"
+AZURE_OPENAI_DEPLOYMENT_ID = "###"
+AZURE_ENDPOINT = "#####"
 
 # Instantiate the AzureOpenAI client
 client = AzureOpenAI(
     api_key=AZURE_OPENAI_API_KEY,
     azure_endpoint=AZURE_ENDPOINT,
-    api_version="2023-07-01-preview",
+    api_version="###",
     azure_deployment=AZURE_OPENAI_DEPLOYMENT_ID
 )
 
